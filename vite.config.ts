@@ -6,6 +6,7 @@ import Components from 'vite-plugin-components';
 const config: UserConfig = {
   optimizeDeps: {
     exclude: ['vue-demi', '@vueuse/shared', '@vueuse/core'],
+    entries: 'index.md',
   },
   plugins: [
     Components({
